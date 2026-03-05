@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>AI Creator Galaxy</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>AI Creator Galaxy</h1>
+
+<nav>
+
+<button data-tab="chat">AIチャット</button>
+<button data-tab="image">画像生成</button>
+<button data-tab="video">動画生成</button>
+<button data-tab="game">ゲーム生成</button>
+<button data-tab="game3d">3Dゲーム</button>
+<button data-tab="site">サイト生成</button>
+
+</nav>
+
+</header>
+
+<main>
+
+<section id="chat" class="tab">
+
+<textarea id="chatPrompt"></textarea>
+
+<button id="chatBtn">送信</button>
+
+<div id="chatOutput"></div>
+
+</section>
+
+<section id="image" class="tab">
+
+<textarea id="imagePrompt"></textarea>
+
+<button id="imageBtn">生成</button>
+
+<canvas id="imageCanvas"></canvas>
+
+</section>
+
+<section id="video" class="tab">
+
+<input type="file" id="videoImage">
+
+<button id="videoBtn">動画生成</button>
+
+<canvas id="videoCanvas"></canvas>
+
+</section>
+
+<section id="game" class="tab">
+
+<textarea id="gamePrompt"></textarea>
+
+<button id="gameBtn">ゲーム生成</button>
+
+<iframe id="gameFrame"></iframe>
+
+</section>
+
+<section id="game3d" class="tab">
+
+<button id="game3dBtn">3Dゲーム生成</button>
+
+<div id="threeContainer"></div>
+
+</section>
+
+<section id="site" class="tab">
+
+<textarea id="sitePrompt"></textarea>
+
+<button id="siteBtn">サイト生成</button>
+
+<iframe id="siteFrame"></iframe>
+
+</section>
+
+</main>
+
+<script src="app.js"></script>
+
+</body>
+</html>
